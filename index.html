@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115467043-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115467043-1');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="description" content="Design de interiores, decoração e arquitetura." />
+  <meta name="keywords" content="design, design de interiores, arquitetura, decoração" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Studio Kina Arquitetura</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <style>
+    /* reset */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    /* my styles */
+    html,
+    body {
+      font-family: Calibri;
+      font-size: 16px;  
+    }
+    .container {
+      margin: 0 auto;
+      max-width: 1000px;
+    }
+    .title {
+      padding: 15px 0;
+    }
+    .title--high {
+      font-size: 32px;
+    }
+    .subtitle {
+      font-size: 22px;
+      padding: 0 0 25px 0;
+    }
+    .half {
+      float: left;
+      width: 50%;
+    }
+    .full {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="half">
+        <h1 class="title title--high">Studio Kina Arquitetura</h1>
+        <h2 class="subtitle">Somos um escritorio de arquitetura</h2>
+        <p>Email: contato@studiokina.com.br</p>
+      </div>
+      <div class="half">
+        <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbz-mf5P6rT1O2Qn74RSQfQlKF-Ykaexe4yve6sgYLGno291isyr/exec">
+          <!-- change the form action to your script url -->
+          <fieldset class="pure-group">
+            <label for="name">Nome: </label>
+            <input id="name" class="full" name="name" placeholder="Me diga seu nome?" required />
+          </fieldset>
+        
+          <fieldset class="pure-group">
+            <label for="message">Mensagem: </label>
+            <textarea id="message" class="full" name="message" rows="10" placeholder="Agora me descreva o que está pensando..." required></textarea>
+          </fieldset>
+        
+          <fieldset class="pure-group">
+            <label for="email">
+              <em>Seu</em> E-mail:</label>
+            <input id="email" class="full" name="email" type="email" value="" placeholder="Só falta seuemail@email.com" required />
+            <span id="email-invalid" style="display:none">
+              Ops! O formato de e-mail não é válido.</span>
+          </fieldset>
+      
+          <button class="button-success pure-button button-xlarge">Enviar</button>
+        </form>
+        <!-- Customise the Thankyou Message People See when they submit the form: -->
+        <div style="display:none;" id="thankyou_message">
+          <h2>
+            <em>Muito obrigado</em> por entrar em contato. Em breve iremos nos falar.</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    function validEmail(email) { // see:
+      var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+      return re.test(email);
+    }
+
+    function validateHuman(honeypot) {
+      if (honeypot) {  //if hidden form filled up
+        console.log("Robot Detected!");
+        return true;
+      } else {
+        console.log("Welcome Human!");
+      }
+    }
+
+    // get all data in form and return object
+    function getFormData() {
+      var form = document.getElementById("gform");
+      var elements = form.elements; // all form elements
+      var fields = Object.keys(elements).filter(function (k) {
+        // the filtering logic is simple, only keep fields that are not the honeypot
+        return (elements[k].name !== "honeypot");
+      }).map(function (k) {
+        if (elements[k].name !== undefined) {
+          return elements[k].name;
+          // special case for Edge's html collection
+        } else if (elements[k].length > 0) {
+          return elements[k].item(0).name;
+        }
+      }).filter(function (item, pos, self) {
+        return self.indexOf(item) == pos && item;
+      });
+      var data = {};
+      fields.forEach(function (k) {
+        data[k] = elements[k].value;
+        var str = ""; // declare empty string outside of loop to allow
+        // it to be appended to for each item in the loop
+        if (elements[k].type === "checkbox") { // special case for Edge's html collection
+          str = str + elements[k].checked + ", "; // take the string and append 
+          // the current checked value to 
+          // the end of it, along with 
+          // a comma and a space
+          data[k] = str.slice(0, -2); // remove the last comma and space 
+          // from the  string to make the output 
+          // prettier in the spreadsheet
+        } else if (elements[k].length) {
+          for (var i = 0; i < elements[k].length; i++) {
+            if (elements[k].item(i).checked) {
+              str = str + elements[k].item(i).value + ", "; // same as above
+              data[k] = str.slice(0, -2);
+            }
+          }
+        }
+      });
+
+      // add form-specific values into the data
+      data.formDataNameOrder = JSON.stringify(fields);
+      data.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
+      data.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+      console.log(data);
+      return data;
+    }
+
+    function handleFormSubmit(event) {  // handles form submit withtout any jquery
+      event.preventDefault();           // we are submitting via xhr below
+      var data = getFormData();         // get the values submitted in the form
+
+      /* OPTION: Remove this comment to enable SPAM prevention, see README.md
+      if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
+        return false;
+      }
+      */
+
+      if (!validEmail(data.email)) {   // if email is not valid show error
+        document.getElementById("email-invalid").style.display = "block";
+        return false;
+      } else {
+        var url = event.target.action;  //
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', url);
+        // xhr.withCredentials = true;
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+          console.log(xhr.status, xhr.statusText)
+          console.log(xhr.responseText);
+          document.getElementById("gform").style.display = "none"; // hide form
+          document.getElementById("thankyou_message").style.display = "block";
+          return;
+        };
+        // url encode form data for sending as post data
+        var encoded = Object.keys(data).map(function (k) {
+          return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
+        }).join('&')
+        xhr.send(encoded);
+      }
+    }
+    function loaded() {
+      console.log("Contact form submission handler loaded successfully.");
+      // bind to the submit event of our form
+      var form = document.getElementById("gform");
+      form.addEventListener("submit", handleFormSubmit, false);
+    };
+    document.addEventListener("DOMContentLoaded", loaded, false);
+  </script>
+</body>
+</html>
