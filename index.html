@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115467043-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115467043-1');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="description" content="Design de interiores, decoração e arquitetura." />
+  <meta name="keywords" content="design, design de interiores, arquitetura, decoração" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Studio Kina Arquitetura</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+  crossorigin="anonymous">
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+  <!--<![endif]-->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+   
+    /* my styles */
+    html,
+    body {
+      font-family: Calibri;
+      font-size: 16px;  
+      font-weight: lighter;
+      background-color: #fff;
+    }
+    .my-background {
+      background: url(./assets/images/background.jpeg) no-repeat left center;
+      background-size: cover;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      z-index: 0;
+    }
+    .my-background::after {
+      content: "";
+      background-color: black;
+      background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(125,185,232,0) 70%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(125,185,232,0) 70%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(125,185,232,0) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+      top: 0; 
+      left: 0; 
+      position: absolute; 
+      height: 100%; 
+      width: 100%;
+      z-index: -1;   
+    }
+    .container {
+      margin: 0 auto;
+      max-width: 1200px;
+      z-index: 1;
+    }
+    .title {
+      margin: 0 0 15px 0;
+      font-weight: lighter;
+      text-transform: uppercase;
+    }
+    .title__smalltext {
+      display: block;
+      font-size: 20px;
+    }
+    .title--high {
+      font-size: 32px;
+    }
+    .subtitle {
+      font-size: 20px;
+      line-height: 1.5;
+      font-weight: lighter;
+      padding: 0 0 25px 0;
+    }
+    .half {
+      float: left;
+      padding: 30px 25px 25px 25px;
+      width: 50%;
+    }
+    .half:first-child {
+      background-color: #fff;
+    }
+    .half:last-child {
+      display: none;
+    }
+    .my-form {
+      border-top: solid 2px #eee;
+    }
+    .full {
+      width: 100%;
+    }
+    .button-success {
+      float: right;
+    }
+    .link {
+      text-decoration: none;
+      cursor: pointer;
+      color: #000;
+    }
+    .my-social {
+      float: right;
+    }
+    .my-social a {
+      margin-left: 5px;
+    }
+    @media only screen and (max-width: 992px) {
+      .my-background {
+        background: none;
+      }
+      .half {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="my-background">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="half">
+        <div class="my-social">
+            <a href="http://www.instagram.com/studio.ki.na/" title="@studiokina" onclick="ga('send', 'event', 'button icon', 'click', 'social buttons', 1);" target="_blank">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMi4xNjNjMy4yMDQgMCAzLjU4NC4wMTIgNC44NS4wNyAzLjI1Mi4xNDggNC43NzEgMS42OTEgNC45MTkgNC45MTkuMDU4IDEuMjY1LjA2OSAxLjY0NS4wNjkgNC44NDkgMCAzLjIwNS0uMDEyIDMuNTg0LS4wNjkgNC44NDktLjE0OSAzLjIyNS0xLjY2NCA0Ljc3MS00LjkxOSA0LjkxOS0xLjI2Ni4wNTgtMS42NDQuMDctNC44NS4wNy0zLjIwNCAwLTMuNTg0LS4wMTItNC44NDktLjA3LTMuMjYtLjE0OS00Ljc3MS0xLjY5OS00LjkxOS00LjkyLS4wNTgtMS4yNjUtLjA3LTEuNjQ0LS4wNy00Ljg0OSAwLTMuMjA0LjAxMy0zLjU4My4wNy00Ljg0OS4xNDktMy4yMjcgMS42NjQtNC43NzEgNC45MTktNC45MTkgMS4yNjYtLjA1NyAxLjY0NS0uMDY5IDQuODQ5LS4wNjl6bTAtMi4xNjNjLTMuMjU5IDAtMy42NjcuMDE0LTQuOTQ3LjA3Mi00LjM1OC4yLTYuNzggMi42MTgtNi45OCA2Ljk4LS4wNTkgMS4yODEtLjA3MyAxLjY4OS0uMDczIDQuOTQ4IDAgMy4yNTkuMDE0IDMuNjY4LjA3MiA0Ljk0OC4yIDQuMzU4IDIuNjE4IDYuNzggNi45OCA2Ljk4IDEuMjgxLjA1OCAxLjY4OS4wNzIgNC45NDguMDcyIDMuMjU5IDAgMy42NjgtLjAxNCA0Ljk0OC0uMDcyIDQuMzU0LS4yIDYuNzgyLTIuNjE4IDYuOTc5LTYuOTguMDU5LTEuMjguMDczLTEuNjg5LjA3My00Ljk0OCAwLTMuMjU5LS4wMTQtMy42NjctLjA3Mi00Ljk0Ny0uMTk2LTQuMzU0LTIuNjE3LTYuNzgtNi45NzktNi45OC0xLjI4MS0uMDU5LTEuNjktLjA3My00Ljk0OS0uMDczem0wIDUuODM4Yy0zLjQwMyAwLTYuMTYyIDIuNzU5LTYuMTYyIDYuMTYyczIuNzU5IDYuMTYzIDYuMTYyIDYuMTYzIDYuMTYyLTIuNzU5IDYuMTYyLTYuMTYzYzAtMy40MDMtMi43NTktNi4xNjItNi4xNjItNi4xNjJ6bTAgMTAuMTYyYy0yLjIwOSAwLTQtMS43OS00LTQgMC0yLjIwOSAxLjc5MS00IDQtNHM0IDEuNzkxIDQgNGMwIDIuMjEtMS43OTEgNC00IDR6bTYuNDA2LTExLjg0NWMtLjc5NiAwLTEuNDQxLjY0NS0xLjQ0MSAxLjQ0cy42NDUgMS40NCAxLjQ0MSAxLjQ0Yy43OTUgMCAxLjQzOS0uNjQ1IDEuNDM5LTEuNDRzLS42NDQtMS40NC0xLjQzOS0xLjQ0eiIvPjwvc3ZnPg=="></a> 
+            <a href="https://www.facebook.com/studiokina.arq/" title="https://www.facebook.com/studiokina.arq/" onclick="ga('send', 'event', 'button icon', 'click', 'social buttons', 2);" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+          </a>
+        </div>
+        <h1 class="title title--high">Studio Kina
+          <span class="title__smalltext">Arquitetura e interiores</span>
+        </h1>
+        <h2 class="subtitle">
+            O STUDIO KINA foi idealizado para transformar espaços através dos desejos e personalidade de cada cliente, com o objetivo
+            de sempre alcançar a melhor solução estética e funcional dentro de cada projeto. Com mais de 10 anos de experiência, Jessica
+            Freitas (Arquiteta e Urbanista, formada pela Universidade Anhembi Morumbi) e Viviane Kiyohara (Designer de interiores,
+            formada pela Universidade Anhembi Morumbi), reuniram experiências em importantes escritórios de São Paulo, atuando em diversos seguimentos, como: projetos de arquitetura, design de interiores, design de mobiliário,
+            paisagismo e acompanhamento de obras.
+        </h2>
+        <p>CONTATO:</p>
+        <p>E-mail: <a href="mailto:contato@studiokina.com.br" title="contato@studiokina.com.br" class="link">contato@studiokina.com.br</a> | (11) 99865-6869 </p>
+      </div>
+      <div class="half my-form">
+        <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbz-mf5P6rT1O2Qn74RSQfQlKF-Ykaexe4yve6sgYLGno291isyr/exec">
+          <!-- change the form action to your script url -->
+          <fieldset>
+            <div class="pure-g">
+              <div class="pure-u-md-12-24">
+                <label for="name">Nome: </label>
+                <input id="name" class="pure-u-23-24" name="name" placeholder="Me diga seu nome?" required />
+              </div>
+              
+              <div class="pure-u-md-12-24">
+                <label for="email">
+                  Seu E-mail:</label>
+                <input id="email" class="pure-u-24-24" name="email" type="email" value="" placeholder="Só falta seuemail@email.com" required />
+                <span id="email-invalid" style="display:none">
+                  Ops! O formato de e-mail não é válido.</span>
+              </div>
+            </div>
+            <div class="pure-g">
+              <div class="pure-u-md-24-24">
+                <label for="message">Mensagem: </label>
+                <textarea id="message" class="pure-u-24-24" name="message" rows="5" placeholder="Agora me descreva o que está pensando..." required></textarea>
+              </div>
+            </div>
+            <button class="button-success pure-button button-xlarge">Enviar</button>
+          </fieldset>
+        </form>
+        <!-- Customise the Thankyou Message People See when they submit the form: -->
+        <div style="display:none;" id="thankyou_message">
+          <h2>
+            <em>Muito obrigado</em> por entrar em contato. Em breve iremos nos falar.</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    function validEmail(email) { // see:
+      var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+      return re.test(email);
+    }
+
+    function validateHuman(honeypot) {
+      if (honeypot) {  //if hidden form filled up
+        console.log("Robot Detected!");
+        return true;
+      } else {
+        console.log("Welcome Human!");
+      }
+    }
+
+    // get all data in form and return object
+    function getFormData() {
+      var form = document.getElementById("gform");
+      var elements = form.elements; // all form elements
+      var fields = Object.keys(elements).filter(function (k) {
+        // the filtering logic is simple, only keep fields that are not the honeypot
+        return (elements[k].name !== "honeypot");
+      }).map(function (k) {
+        if (elements[k].name !== undefined) {
+          return elements[k].name;
+          // special case for Edge's html collection
+        } else if (elements[k].length > 0) {
+          return elements[k].item(0).name;
+        }
+      }).filter(function (item, pos, self) {
+        return self.indexOf(item) == pos && item;
+      });
+      var data = {};
+      fields.forEach(function (k) {
+        data[k] = elements[k].value;
+        var str = ""; // declare empty string outside of loop to allow
+        // it to be appended to for each item in the loop
+        if (elements[k].type === "checkbox") { // special case for Edge's html collection
+          str = str + elements[k].checked + ", "; // take the string and append 
+          // the current checked value to 
+          // the end of it, along with 
+          // a comma and a space
+          data[k] = str.slice(0, -2); // remove the last comma and space 
+          // from the  string to make the output 
+          // prettier in the spreadsheet
+        } else if (elements[k].length) {
+          for (var i = 0; i < elements[k].length; i++) {
+            if (elements[k].item(i).checked) {
+              str = str + elements[k].item(i).value + ", "; // same as above
+              data[k] = str.slice(0, -2);
+            }
+          }
+        }
+      });
+
+      // add form-specific values into the data
+      data.formDataNameOrder = JSON.stringify(fields);
+      data.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
+      data.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+      console.log(data);
+      return data;
+    }
+
+    function handleFormSubmit(event) {  // handles form submit withtout any jquery
+      event.preventDefault();           // we are submitting via xhr below
+      var data = getFormData();         // get the values submitted in the form
+
+      /* OPTION: Remove this comment to enable SPAM prevention, see README.md
+      if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
+        return false;
+      }
+      */
+
+      if (!validEmail(data.email)) {   // if email is not valid show error
+        document.getElementById("email-invalid").style.display = "block";
+        return false;
+      } else {
+        var url = event.target.action;  //
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', url);
+        // xhr.withCredentials = true;
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+          console.log(xhr.status, xhr.statusText)
+          console.log(xhr.responseText);
+          document.getElementById("gform").style.display = "none"; // hide form
+          document.getElementById("thankyou_message").style.display = "block";
+          return;
+        };
+        // url encode form data for sending as post data
+        var encoded = Object.keys(data).map(function (k) {
+          return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
+        }).join('&')
+        xhr.send(encoded);
+      }
+    }
+    function loaded() {
+      console.log("Contact form submission handler loaded successfully.");
+      // bind to the submit event of our form
+      var form = document.getElementById("gform");
+      form.addEventListener("submit", handleFormSubmit, false);
+    };
+    document.addEventListener("DOMContentLoaded", loaded, false);
+  </script>
+</body>
+</html>
